@@ -137,7 +137,7 @@ func main() {
 ```shell
 fatal error: concurrent map writes
 
-goroutine 13 [running]:
+/.../
 
 Process finished with the exit code 2
 ```
