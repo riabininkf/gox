@@ -2,14 +2,14 @@ package container
 
 import "container/ring"
 
-// Ring provides a generic wrapper for ring.Ring.
-type Ring[T any] struct {
-	r *ring.Ring
-}
-
 // NewRing creates a new ring of n generic elements.
 func NewRing[T any](n int) *Ring[T] {
 	return &Ring[T]{r: ring.New(n)}
+}
+
+// Ring provides a generic wrapper for ring.Ring.
+type Ring[T any] struct {
+	r *ring.Ring
 }
 
 // Len implements [(*ring.Ring).Len]
